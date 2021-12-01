@@ -1,0 +1,380 @@
+<div class="row">
+    <div class="col-lg-10 page-header text-left middle-align">
+        {{title}}
+    </div>
+    <div class="col-lg-2 text-right middle-align">
+        <a class="btn btn-danger btn-sm" (click)="startOver()">Start Over</a>
+    </div>
+</div>
+
+<div class="spacer-row"></div>
+
+<!-- Scoreboard row -->
+<div class="row pad-left pad-right">
+    <div class="card card-narrow">
+        <div class="card-body">
+            <h5 class="card-title">Game 1</h5>
+            <div class="card-text">
+                <div class="row underlined">
+                    <div class="col-lg-8 text-left">
+                        <b>Bound 4 Relegation<br>(Hari)</b>
+                    </div>
+                    <div class="col-lg-4 text-right">
+                        <b>126.1</b>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 text-left">
+                        Calico Cut Pants<br>(Glenn)
+                    </div>
+                    <div class="col-lg-4 text-right">
+                        108.8
+                    </div>
+                </div>
+            </div>
+            <div class="spacer-row"></div>
+            <div class="row text-center">
+                <a class="btn btn-primary" role="button" (click)="showGame('1')">View Recap</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card card-narrow">
+        <div class="card-body">
+            <h5 class="card-title">Game 2</h5>
+            <div class="card-text">
+                <div class="row underlined">
+                    <div class="col-lg-8 text-left">
+                        <b>Big Baby<br>(G)</b>
+                    </div>
+                    <div class="col-lg-4 text-right">
+                        <b>107.9</b>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 text-left">
+                        Covid All Stars<br>(Swick)
+                    </div>
+                    <div class="col-lg-4 text-right">
+                        92.3
+                    </div>
+                </div>
+            </div>
+            <div class="spacer-row"></div>
+            <div class="row text-center">
+                <a class="btn btn-primary" role="button" (click)="showGame('2')">View Recap</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card card-narrow">
+        <div class="card-body">
+            <h5 class="card-title">Game 3</h5>
+            <div class="card-text">
+                <div class="row underlined">
+                    <div class="col-lg-8 text-left">
+                        <b>Space Dockers<br>(Jeff)</b>
+                    </div>
+                    <div class="col-lg-4 text-right">
+                        <b>116.1</b>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 text-left">
+                        The Throbber<br>(Aaron)
+                    </div>
+                    <div class="col-lg-4 text-right">
+                        92.3
+                    </div>
+                </div>
+            </div>
+            <div class="spacer-row"></div>
+            <div class="row text-center">
+                <a class="btn btn-primary" role="button" (click)="showGame('3')">View Recap</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card card-narrow">
+        <div class="card-body">
+            <h5 class="card-title">Game 4</h5>
+            <div class="card-text">
+                <div class="row underlined">
+                    <div class="col-lg-8 text-left">
+                        Can't Stop Najee<br>(CJ)
+                    </div>
+                    <div class="col-lg-4 text-right">
+                        56.5
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 text-left">
+                        <b>Chiens JuJu...<br>(Reid)</b>
+                    </div>
+                    <div class="col-lg-4 text-right">
+                        <b>116.4</b>
+                    </div>
+                </div>
+            </div>
+            <div class="spacer-row"></div>
+            <div class="row text-center">
+                <a class="btn btn-primary" role="button" (click)="showGame('4')">View Recap</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card card-narrow">
+        <div class="card-body">
+            <h5 class="card-title">Game 5</h5>
+            <div class="card-text">
+                <div class="row underlined">
+                    <div class="col-lg-8 text-left">
+                        <b>Good On Paper<br>(Jon)</b>
+                    </div>
+                    <div class="col-lg-4 text-right">
+                        <b>131.0</b>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 text-left">
+                        Covid -69<br>(Amir)
+                    </div>
+                    <div class="col-lg-4 text-right">
+                        88.7
+                    </div>
+                </div>
+            </div>
+            <div class="spacer-row"></div>
+            <div class="row text-center">
+                <a class="btn btn-primary" role="button" (click)="showGame('5')">View Recap</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="spacer-row"><br></div>
+
+<!-- Details Row -->
+<div>
+    <div *ngIf="showGame1" class="row pad-left pad-right">
+        <div class="card card-wide">
+            <div class="card-body">
+                <h5 class="card-title">Game 1: Bound 4 Relegation vs. Calico Cut Pants</h5>
+                <div class="card-text">
+                    <div class="row">
+                        <p>After the slate of Thanksgiving Day games, I had a 7.5 lead over Glenn. Normally, this would be a cause for optimism, but my points total was from four players; Glenn's was from two. (Special shout out to the automatic fucking machine that is the Buffalo Bills coaching staff. Thanks for making Zack Moss a healthy scratch two hours before kickoff! Can't imagine how that would adversely affect anyone's weekend...)</p>
+                        <p>Anyway, prior to Sunday's noon kickoff:</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 btn-group" role="group">
+                            <a class="btn btn-secondary full-width" role="button" (click)="showGameOption('1','A')">Glenn decides to sub the Colts' defense for the Panthers since Miami is an offensive powerhouse with Tua under center, and Tom Brady isn't getting any younger.</a>
+                        </div>
+                        <div class="col-lg-6 btn-group" role="group">
+                            <a class="btn btn-secondary full-width" role="button" (click)="showGameOption('1','B')">Glenn leaves Elijah Moore as a starter over Tee Higgins because the Houston Texans makes even the Jets offense look good.</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 btn-group" role="group">
+                            <a class="btn btn-secondary full-width" role="button" (click)="showGameOption('1','C')">Hari decides to give Mike Williams just one more chance this year, and picks him to start in place of Adam Thielen.</a>
+                        </div>
+                        <div class="col-lg-6 btn-group" role="group">
+                            <a class="btn btn-secondary full-width" role="button" (click)="showGameOption('1','D')">Hari trusts the Ravens defense to not rack up negative points against the lowly Browns.</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="spacer-row underlined"></div>
+                <div class="spacer-row"></div>
+                <div class="row" *ngIf="show1A">
+                    <p>Turns out that this move is a distinction without a difference. Both defenses put up a solid 1.0 points, which partly explains Glenn taking a loss to the worst team in the league this week.</p>
+                </div>
+                <div class="row" *ngIf="show1B">
+                    <p>Yeah, this one ends up hurting a bit, as Moore records a pedestrian 7.3 while Higgins shows up to the tune of 20.4. Hard to blame Glenn, though, since this is the first time Higgins has topped 12 points since Week 2. </p>
+                </div>
+                <div class="row" *ngIf="show1C">
+                    <p>This would have been disastrous, as Williams continues his season-long slide down the rankings chart with a paltry 5.9 points. Thielen, on the other hand, puts up a very much appreciated 20.7 to help Hari secure the win.</p>
+                </div>
+                <div class="row" *ngIf="show1D">
+                    <p>This works out just fine! 11.0 points from a defense ain't too shabby, and Hari gets to record his second win in a row. Unfortunately, that still only qualifies him for 7th in the league. :sad_panda:</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="showGame2" class="row pad-left pad-right">
+        <div class="card card-wide">
+            <div class="card-body">
+                <h5 class="card-title">Game 2: Big Baby vs. Covid All Stars</h5>
+                <div class="card-text">
+                    <div class="row">
+                        <p>I'll be honest: I haven't followed our league as diligently in years past. In completely unrelated news, I'm tied for last in the league this year and am basically guaranteed a season of beating up on the leper colony that is B league in 2022. Anyway, based on all of the recaps so far this season, I *totally* thought G was running away with the championship. Turns out he's exactly 1 game above .500 and tied for third. Huh. Maybe I'm overestimating his capabilities on other things too and just don't know it...</p>
+                        <p>Going into Sunday:</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 btn-group" role="group">
+                            <a class="btn btn-secondary full-width" role="button" (click)="showGameOption('2','A')">Swick decides to start Russell Wilson over Jalen Hurts <i>and</i> Ryan Tannehill because, I mean, why else carry three healthy QBs on your roster in a single-QB league? Gotta give yourself options, am I right?</a>
+                        </div>
+                        <div class="col-lg-6 btn-group" role="group">
+                            <a class="btn btn-secondary full-width" role="button" (click)="showGameOption('2','B')">Swick leaves Cordarelle Patterson in at flex over Marvin Jones, Jr., even though the "questionable" tag would give lesser fantasy managers a reason to reconsider.</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 btn-group" role="group">
+                            <a class="btn btn-secondary full-width" role="button" (click)="showGameOption('2','C')">G distrusts the Texans D and opts to start the Eagles against the Giants.</a>
+                        </div>
+                        <div class="col-lg-6 btn-group" role="group">
+                            <a class="btn btn-secondary full-width" role="button" (click)="showGameOption('2','D')">G sticks with the hot hand in Dalvin Cook instead of getting cute and putting Kareem Hunt in his place.</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="spacer-row underlined"></div>
+                <div class="spacer-row"></div>
+                <div class="row" *ngIf="show2A">
+                    <p>LOL, this move is actually what Swick should have done. Russ cooked his way to 19.4 points, whereas the other two QBs on Swick's team couldn't crack 15 points. Combined. When folks say, "It's an embarrassment of riches," they usually mean that in a positive sense. ;)</p>
+                </div>
+                <div class="row" *ngIf="show2B">
+                    <p>Great move! Patterson outscored Jones by 20 points. Unfortunately, it wasn't enough to secure the win, as G takes this one by an almost 30-point margin.</p>
+                </div>
+                <div class="row" *ngIf="show2C">
+                    <p>This turned out to be the right call, but it only gave G 2.0 additional "points over replacement player." Based on the final tally, G could have gone the other way and it wouldn't have made much of a difference.</p>
+                </div>
+                <div class="row" *ngIf="show2D">
+                    <p>Again, G makes all the right moves and rides Dalvin Cook's 16.6 points to a big win over Swick. He now sits solidly in 3rd place with... 120 more points than our season leader. Like I said, weird.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="showGame3" class="row pad-left pad-right">
+        <div class="card card-wide">
+            <div class="card-body">
+                <h5 class="card-title">Game 3: Space Dockers vs. The Throbber</h5>
+                <div class="card-text">
+                    <div class="row">
+                        <p>I know draft weekend is always a time for optimism, and the actual season often lends a little disappointmet to the whole fantasy football experience. But this season has got to be a real letdown for both Jeff and Aaron. On paper, both teams looked great by the end of the Vegas trip. But then Derrick Henry went on IR for Jeff, and Saquon Barkley has done very little at all this season for Aaron with all of his own injury problems. ESPN gave Aaron a 55% chance of winning this matchup going into the first set of Sunday games, but let's be honest: nobody but these two cares about the outcome (and there's a good chance neither of these two cares either).</p>
+                        <p>Two hours before the noon games kick off:</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 btn-group" role="group">
+                            <a class="btn btn-secondary full-width" role="button" (click)="showGameOption('3','A')">Aaron subs Odell Beckham, Jr., for Michael Pittman, Jr., in the insane hope that George Costanza's theory of "doing the opposite of what you would normally do" would turn his season around. Also, one "Junior" is just as good as another, right?</a>
+                        </div>
+                        <div class="col-lg-6 btn-group" role="group">
+                            <a class="btn btn-secondary full-width" role="button" (click)="showGameOption('3','B')">Aaron leaves Noah Fant in instead of starting Tyler Conklin because even at Week 12, it's not too late for Fant to have that breakout season everyone's been talking about.</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 btn-group" role="group">
+                            <a class="btn btn-secondary full-width" role="button" (click)="showGameOption('3','C')">Jeff rolls with Tyler Boyd over Jalen Waddle because he thinks the cramps last week were just due to it being that time of the month for Boyd.</a>
+                        </div>
+                        <div class="col-lg-6 btn-group" role="group">
+                            <a class="btn btn-secondary full-width" role="button" (click)="showGameOption('3','D')">Jeff keeps the Jaguars defense in play instead of subbing them out for the Bucs.</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="spacer-row underlined"></div>
+                <div class="spacer-row"></div>
+                <div class="row" *ngIf="show3A">
+                    <p>This would have actually been the right move, as OBJ put up 16.6 points against Pittman's 7.3. This wouldn't have necessarily won Aaron the matchup but it would at least have made the loss a little less lopsided. There might actually be something to this whole "opposite day" thing...</p>
+                </div>
+                <div class="row" *ngIf="show3B">
+                    <p>Funnily enough, starting Conklin would've netted Aaron an additional 0.8 points. Missed on the sit/start decision, but end of the day, he would've needed just under 30 Conklin-Swaps (tm) to top Munoz this week. Congrats Aaron, you now own last place instead of me. Don't worry, though, I kept the seat warm for you by farting on it.</p>
+                </div>
+                <div class="row" *ngIf="show3C">
+                    <p>This decision could have been catastrophic for Jeff, as Waddle scorec 10 times as many points as Boyd. The 22 point difference (24.2 vs 2.3) just about single-handedly comprises Jeff's margin of victory this week.</p>
+                </div>
+                <div class="row" *ngIf="show3D">
+                    <p>Playing the Bucs D here would have actually been the better move (10 points vs 4). Luckily for Jeff, the quartet  of Gaskin+Waller+Waddle+Samuel showed up in style to secure the win after his stars (Brady and Adams) did the needful.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="showGame4" class="row pad-left pad-right">
+        <div class="card card-wide">
+            <div class="card-body">
+                <h5 class="card-title">Game 4: Can't Stop Najee vs. Chiens JuJu CoveredInPoopoo</h5>
+                <div class="card-text">
+                    <div class="row">
+                        <p>I'm sure CJ is a really nice person, and if I were sober any of the handful of times I've met him, I'd probably have some really awesome stories to share about how he's a model citizen who helps Afghan refugees in his spare time or something. But, the truth is, I've seen CJ's surrogate more than him recently, so I instictively want to put an asterisk on this season if he ends up winninng out. What a fucking opportunist. Anyone who's seen Brooklyn Nine-Nine will understand me when I call him "The Vulture."</p>
+                        <p>Whatever. I'm actively rooting for Jon this week. Before the early games, Reid had a slightly above 50/50 chance of winning this matchup. To tip the scales in his favor:</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 btn-group" role="group">
+                            <a class="btn btn-secondary full-width" role="button" (click)="showGameOption('4','A')">CJ calls his surrogate to see what he should do, and decides to start Kenny Golladay over Tyler Lockett based on his expert advice.</a>
+                        </div>
+                        <div class="col-lg-6 btn-group" role="group">
+                            <a class="btn btn-secondary full-width" role="button" (click)="showGameOption('4','B')">CJ does the smart thing and rolls with Nick Chubb instead of Damien Harris because those ESPN projections are almost never wrong.</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 btn-group" role="group">
+                            <a class="btn btn-secondary full-width" role="button" (click)="showGameOption('4','C')">Reid rolls the dice with Rhamondre Stevenson in place of Darrell Henderson, Jr., at the flex spot to see if he can win while getting extra points on the difficulty score.</a>
+                        </div>
+                        <div class="col-lg-6 btn-group" role="group">
+                            <a class="btn btn-secondary full-width" role="button" (click)="showGameOption('4','D')">Reid lets his eye chart-worthy stack of injured bench players make all of his sit/start decisions for him, essentially taking the steering wheel away from him and letting his GM skills win or lose on their own.</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="spacer-row underlined"></div>
+                <div class="spacer-row"></div>
+                <div class="row" *ngIf="show4A">
+                    <p>This would have actually cost CJ some points, but not a lot (1.5). Either receiver choice would have been defensible. What wouldn't have been defensible, though, would be if CJ got blown out with the lowest score of the week. <i>(Checks scoreboard. Moves on.)</i></p>
+                </div>
+                <div class="row" *ngIf="show4B">
+                    <p>The ESPN projections were wrong. Harris outscored Chubb by about 7 points. Luckily for CJ, this turned out to be a moot point. He could have played every single player on his roster and <i>still</i> would have scored the lowest point total of the week. By over 12 points!! I am struggling to find a time in history where someone has put up less of a fight... France, maybe, during World War II?</p>
+                </div>
+                <div class="row" *ngIf="show4C">
+                    <p>This would have certainly upped the difficulty level for Reid, as Henderson had a pretty decent day and Stevenson absolutely did not. Luckily, Reid is too smart to play the Milton Berle game, and CJ's team was not smart enough to play better.</p>
+                </div>
+                <div class="row" *ngIf="show4D">
+                    <p>Yup. Reid gets a solid win here, but it was out of sheer luck instead of managerial acumen. His bench put up 13.6 points, so it's not like he had to do much hemming and hawing on game day. Just set it and forget it, right Reid?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="showGame5" class="row pad-left pad-right">
+        <div class="card card-wide">
+            <div class="card-body">
+                <h5 class="card-title">Game 5: Good On Paper vs. Covid -69</h5>
+                <div class="card-text">
+                    <div class="row">
+                        <p>As I've mentioned elsewhere in this recap, I'm really pulling for Jon this week. Would love to see him take sole possession of first place, and if it means beating Amir, well that's just icing on the cake. Brown people should know their place. The matchup was pretty evenly set prior to the Sunday games -- ESPN had it scored as 51% likely to go to Jon.</p>
+                        <p>To tip the scales in his favor:</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 btn-group" role="group">
+                            <a class="btn btn-secondary full-width" role="button" (click)="showGameOption('5','A')">Amir chooses to start Joe Burrow over Kirk Cousins because, apparently, the San Francisco defense scares him more than the Cincinnati offense.</a>
+                        </div>
+                        <div class="col-lg-6 btn-group" role="group">
+                            <a class="btn btn-secondary full-width" role="button" (click)="showGameOption('5','B')">Amir benches Alex Collins for Ty Johnson, hoping that the Texans' historically bad run defense continues to make opposing running backs look like they're playing Madden in Rookie mode.</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 btn-group" role="group">
+                            <a class="btn btn-secondary full-width" role="button" (click)="showGameOption('5','C')">Jon starts Jarvis Landry in place of Brandin Cooks because even the ghost of Landry is better than someone who catches balls thrown in the Houston offense.</a>
+                        </div>
+                        <div class="col-lg-6 btn-group" role="group">
+                            <a class="btn btn-secondary full-width" role="button" (click)="showGameOption('5','D')">Jon starts Matt Stafford over Cam Newton, resting secure in the knowledge that even Miami's defense can't make Cam look like Superman again.</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="spacer-row underlined"></div>
+                <div class="spacer-row"></div>
+                <div class="row" *ngIf="show5A">
+                    <p>I would definitely have lost money on this bet. Turns out Burrow had a very Burrow-esque game (16.4 points, 17.2 season avg), whereas Cousins came crashing back to earth like it was Week 4 all over again. Amir makes the right call but draws the wrong opponent, as Jon puts up the high score of the week.</p>
+                </div>
+                <div class="row" *ngIf="show5B">
+                    <p>So, I wrote the "props" on this recap a good 90 minutes before the games kicked off on Sunday, and this one turned out kinda funny. Amir did bench Collins, but not for Ty Johnson, which would have been smart. Instead -- and honestly, I can't be sure here -- but I <i>think</i> he started Dallas Goedert in the flex spot over Collins. If true, that took 0.7 points <i>off</i> the board for him (mind you, Collins only scored 1.2, so... yeah). It seems that the two-tight end set is only successful in real life, not fantasy.</p>
+                </div>
+                <div class="row" *ngIf="show5C">
+                    <p>This would have netted Jon exactly 0.1 extra points -- Landry picked up 12.1 while Cooks came home with an even dozen. Either way, Jon wins this matchup pretty handily and, in the process, makes me happy because now CJ isn't in first place anymore. Sending a case of Austin Beerworks' freshest Pearl-Snap Jon's way right after I hit "send" on this bitch.</p>
+                </div>
+                <div class="row" *ngIf="show5D">
+                    <p>This was absolutely the right call, as Stafford finished the day with just under 22 points while Cam 24%-completioned and 2-picked his way to what I have to believe is the lowest QB score of the week (sorry, too lazy to check the official stats on this). I guess I haven't been paying close enough attention to the football universe because I can't for the life of me identify that one big turning point where Cam went from unstoppable to unstartable...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer-spacer"></div>

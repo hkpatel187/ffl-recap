@@ -1,0 +1,105 @@
+/* You can add global styles to this file, and also import other style files */
+/* Application-wide Styles */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+h1 {
+    color: #b71c1c;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 250%;
+  }
+  h2, h3 {
+    color: #444;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+  }
+  body {
+    margin: 2em;
+  }
+  body, input[type="text"], button {
+    color: #333;
+    font-family: Cambria, Georgia, serif;
+  }
+  /* everywhere else */
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+.card-title {
+  color: #1565c0;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.page-header {
+  color: #b71c1c;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+
+.middle-align {
+  display: flex;
+  align-items: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.row {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.spacer-row {
+  height: 1.5rem;
+}
+
+.footer-spacer {
+  height: 8rem;
+}
+
+.placeholder {
+  height: 4rem;
+}
+
+.underlined {
+  border-bottom: 2px solid #333;
+}
+
+.btn {
+  cursor: pointer !important;
+}
+
+.pad-left {
+  padding-left: 15px;
+}
+
+.pad-right {
+  padding-right: 15px;
+}
+
+.card-narrow {
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 19%;
+}
+
+.card-wide {
+  margin: 5px;
+  width: 98%;
+}
+
+.full-width {
+  min-width: 95%;
+  margin: 10px;
+}
+
+.margin-10 {
+  margin: 10px;
+}
+
+.card-text {
+  font-size: 14px;
+}
